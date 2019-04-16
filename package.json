@@ -1,5 +1,5 @@
 {
-  "name": "Shopware-Api-Test",
+  "name": "shopware-api-playground",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^7.0.0",
     "shopware-api-client": "^1.6.0"
