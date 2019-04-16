@@ -8,5 +8,6 @@ module.exports = async (_shop) => {
   } catch (err) {
     console.log(err);
   }
+
   return arr;
 }

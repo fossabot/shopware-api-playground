@@ -4,13 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose",
+    "lint": "./node_modules/.bin/eslint ."
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^7.0.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-jest": "^22.4.1",
+    "jest": "^24.7.1",
+    "jest-runner-eslint": "^0.7.3",
     "shopware-api-client": "^1.6.0"
+  },
+  "jest": {
+    "projects": [{
+        "displayName": "test"
+      },
+      {
+        "runner": "jest-runner-eslint",
+        "displayName": "lint",
+        "testMatch": [
+          "<rootDir>/**/*.js"
+        ]
+      }
+    ]
   }
 }
