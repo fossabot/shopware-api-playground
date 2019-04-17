@@ -1,10 +1,10 @@
 const shop = require('../helper/shop');
 
-const getIDs = require('../functions/getIDs');
+const getItemIDs = require('../functions/getItemIDs');
 const updateItems = require('../functions/updateItems');
 
 (async () => {
-  const IDs = await getIDs(shop);
+  const IDs = await getItemIDs(shop);
   const arr = [];
   for (const ID of IDs) {
     arr.push({

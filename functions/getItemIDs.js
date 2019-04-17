@@ -1,3 +1,5 @@
+const logger = require('../helper/logger');
+
 module.exports = async (_shop) => {
   let arr = [];
   try {
@@ -6,7 +8,7 @@ module.exports = async (_shop) => {
       arr.push(art.id);
     }
   } catch (err) {
-    console.log(err);
+    logger.error(err);
   }
 
   return arr;
