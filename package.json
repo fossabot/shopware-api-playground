@@ -13,7 +13,7 @@
   "dependencies": {
     "dotenv": "^8.1.0",
     "eslint": "^6.2.2",
-    "eslint-plugin-jest": "22.15.2",
+    "eslint-plugin-jest": "22.16.0",
     "jest": "^24.9.0",
     "jest-runner-eslint": "^0.7.4",
     "shopware-api-client": "^1.6.0",
